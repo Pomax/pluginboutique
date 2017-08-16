@@ -1,0 +1,78 @@
+.App-header {
+  background: white;
+  text-align: center;
+  height: 40px;
+}
+
+.App-content {
+  background: #00a3dd;
+}
+
+.App-content h1 {
+  position: relative;
+  font-size: 2rem;
+  color: #222;
+  z-index: 2;
+  background: rgba(255,255,255,0.7);
+  display: inline-block;
+}
+
+.logo {
+  float: left;
+}
+
+h1 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.buttons {
+  text-align: right;
+}
+
+.buttons button + button {
+  margin-left: 1rem;
+}
+
+.App-content h2 {
+  font-size: 1rem;
+  color: #222;
+}
+
+.product-entry {
+  z-index: 1;
+  background: #FFF;
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-overloy {
+  opacity: 0.95;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-left: 2px solid #00a3dd;
+  padding-left: 10px;
+}
+
+.download {
+  display: inline-block;
+  padding: 1rem 0;
+}
+.download a {
+  border: 1px solid rgba(0,200,220,0.4);
+  background: #00a3dd;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 2px 5px;
+  width: 12rem;
+  margin: 0 0.25rem;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

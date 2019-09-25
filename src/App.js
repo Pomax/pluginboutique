@@ -41,7 +41,7 @@ class App extends Component {
       return platform.map((d,i) => {
         return (
           <div key={key+i} className="download platform-{key}">
-            <a href={d.url}>Download for {key}</a>
+            <a href={`https://www.pluginboutique.com${d.url}`}>Download for {key}</a>
           </div>
         );
       });

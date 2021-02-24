@@ -13,8 +13,8 @@ function companySort(a, b) {
 }
 
 function getProductList(setState) {
-  import(`./demo/demo.json`).then((productList) => {
-//  import(`./protected/formatted.json`).then((productList) => {
+//  import(`./demo/demo.json`).then((productList) => {
+  import(`./protected/formatted.json`).then((productList) => {
 
     const data = Object.keys(productList)
       .filter((key) => key == parseInt(key))

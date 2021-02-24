@@ -16,15 +16,6 @@ function getProductList(setState) {
   import(`./demo/demo.json`).then((productList) => {
 //  import(`./protected/formatted.json`).then((productList) => {
 
-    const copied = JSON.parse(JSON.stringify(productList));
-    Object.entries(copied).forEach(([key, entry]) => {
-      if (entry.serial_numbers) entry.serial_numbers.forEach(s => {
-        s.serial_number_id = -1;
-        s.values = [`RNDM-${(''+Math.random()).slice(2)}`];
-      })
-    });
-    console.log(JSON.stringify(copied));
-
     const data = Object.keys(productList)
       .filter((key) => key == parseInt(key))
       .map((key) => {
